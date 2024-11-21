@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC6CB3632CEF31F10074D668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB3622CEF31F10074D668 /* AppDelegate.swift */; };
+		CC6CB3652CEF31F10074D668 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB3642CEF31F10074D668 /* SceneDelegate.swift */; };
+		CC6CB36C2CEF31F30074D668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC6CB36B2CEF31F30074D668 /* Assets.xcassets */; };
+		CC6CB37A2CEF32FA0074D668 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CC6CB3792CEF32FA0074D668 /* SnapKit */; };
+		CC6CB37F2CEF330A0074D668 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = CC6CB37E2CEF330A0074D668 /* SQLite */; };
+		CC6CB3822CEF33130074D668 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = CC6CB3812CEF33130074D668 /* Swinject */; };
+		CC6CB3872CEF331B0074D668 /* SwinjectAutoregistration in Frameworks */ = {isa = PBXBuildFile; productRef = CC6CB3862CEF331B0074D668 /* SwinjectAutoregistration */; };
+		CC6CB38C2CEF335B0074D668 /* CasinoCollectionModel in Frameworks */ = {isa = PBXBuildFile; productRef = CC6CB38B2CEF335B0074D668 /* CasinoCollectionModel */; };
+		CC6CB38E2CEF335B0074D668 /* CasinoCollectionViewModel in Frameworks */ = {isa = PBXBuildFile; productRef = CC6CB38D2CEF335B0074D668 /* CasinoCollectionViewModel */; };
+		CC6CB3962CEF33B40074D668 /* Setupable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB3952CEF33B40074D668 /* Setupable.swift */; };
+		CC6CB3982CEF33BC0074D668 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB3972CEF33BC0074D668 /* BaseViewController.swift */; };
+		CC6CB39A2CEF33C20074D668 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB3992CEF33C20074D668 /* ReusableView.swift */; };
+		CC6CB39C2CEF33C90074D668 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB39B2CEF33C90074D668 /* BaseRouter.swift */; };
+		CC6CB39F2CEF33E10074D668 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB39E2CEF33E10074D668 /* ViewControllerFactory.swift */; };
+		CC6CB3A12CEF33E80074D668 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB3A02CEF33E80074D668 /* ServiceAssembly.swift */; };
+		CC6CB3A42CEF34220074D668 /* UntilOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB3A32CEF34220074D668 /* UntilOnboardingViewController.swift */; };
+		CC6CB3A62CEF342B0074D668 /* UntilOnboardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB3A52CEF342B0074D668 /* UntilOnboardingRouter.swift */; };
+		CC6CB3A82CEF34330074D668 /* UntilOnboardingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB3A72CEF34330074D668 /* UntilOnboardingAssembly.swift */; };
+		CC6CB3AB2CEF34570074D668 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB3AA2CEF34570074D668 /* TableView.swift */; };
+		CC6CB3AD2CEF345D0074D668 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB3AC2CEF345D0074D668 /* CollectionView.swift */; };
+		CC6CB3AF2CEF34640074D668 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB3AE2CEF34640074D668 /* UIColor.swift */; };
+		CC6CB3B12CEF34690074D668 /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB3B02CEF34690074D668 /* UIDevice.swift */; };
+		CC6CB3B32CEF346F0074D668 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB3B22CEF346F0074D668 /* UILabel.swift */; };
+		CC6CB3B52CEF34730074D668 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB3B42CEF34730074D668 /* StackView.swift */; };
+		CC6CB3B72CEF34780074D668 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB3B62CEF34780074D668 /* String.swift */; };
+		CC6CB3B92CEF347D0074D668 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB3B82CEF347D0074D668 /* TabBar.swift */; };
+		CC6CB3BF2CEF35AA0074D668 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC6CB3BA2CEF35AA0074D668 /* SF-Pro-Text-Semibold.otf */; };
+		CC6CB3C02CEF35AA0074D668 /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC6CB3BB2CEF35AA0074D668 /* SF-Pro-Text-Bold.otf */; };
+		CC6CB3C12CEF35AA0074D668 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC6CB3BC2CEF35AA0074D668 /* SF-Pro-Text-Regular.otf */; };
+		CC6CB3C22CEF35AA0074D668 /* SF-Pro-Text-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC6CB3BD2CEF35AA0074D668 /* SF-Pro-Text-Black.otf */; };
+		CC6CB3C32CEF35AA0074D668 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = CC6CB3BE2CEF35AA0074D668 /* SF-Pro-Text-Medium.otf */; };
+		CC6CB3C62CEF39900074D668 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB3C52CEF39900074D668 /* OnboardingViewController.swift */; };
+		CC6CB3C82CEF399A0074D668 /* OnboardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB3C72CEF39990074D668 /* OnboardingRouter.swift */; };
+		CC6CB3CA2CEF39A30074D668 /* OnboardingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB3C92CEF39A30074D668 /* OnboardingAssembly.swift */; };
+		CC6CB3CD2CEF44EB0074D668 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB3CC2CEF44EB0074D668 /* OnboardingCell.swift */; };
+		CC6CB3D02CEF47840074D668 /* AdvancedPageControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB3CF2CEF47840074D668 /* AdvancedPageControlView.swift */; };
+		CC6CB3D22CEF478B0074D668 /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB3D12CEF478B0074D668 /* ColorUtils.swift */; };
+		CC6CB3D42CEF47910074D668 /* Drawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB3D32CEF47910074D668 /* Drawer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CC6CB35F2CEF31F10074D668 /* CasinoCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CasinoCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC6CB3622CEF31F10074D668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC6CB3642CEF31F10074D668 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CC6CB36B2CEF31F30074D668 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC6CB3702CEF31F30074D668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC6CB3762CEF32C50074D668 /* CasinoCollectionModel */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CasinoCollectionModel; sourceTree = "<group>"; };
+		CC6CB3772CEF32D40074D668 /* CasinoCollectionViewModel */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CasinoCollectionViewModel; sourceTree = "<group>"; };
+		CC6CB3952CEF33B40074D668 /* Setupable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setupable.swift; sourceTree = "<group>"; };
+		CC6CB3972CEF33BC0074D668 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CC6CB3992CEF33C20074D668 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		CC6CB39B2CEF33C90074D668 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		CC6CB39E2CEF33E10074D668 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		CC6CB3A02CEF33E80074D668 /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
+		CC6CB3A32CEF34220074D668 /* UntilOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UntilOnboardingViewController.swift; sourceTree = "<group>"; };
+		CC6CB3A52CEF342B0074D668 /* UntilOnboardingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UntilOnboardingRouter.swift; sourceTree = "<group>"; };
+		CC6CB3A72CEF34330074D668 /* UntilOnboardingAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UntilOnboardingAssembly.swift; sourceTree = "<group>"; };
+		CC6CB3AA2CEF34570074D668 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		CC6CB3AC2CEF345D0074D668 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		CC6CB3AE2CEF34640074D668 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		CC6CB3B02CEF34690074D668 /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
+		CC6CB3B22CEF346F0074D668 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		CC6CB3B42CEF34730074D668 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		CC6CB3B62CEF34780074D668 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		CC6CB3B82CEF347D0074D668 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		CC6CB3BA2CEF35AA0074D668 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
+		CC6CB3BB2CEF35AA0074D668 /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
+		CC6CB3BC2CEF35AA0074D668 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		CC6CB3BD2CEF35AA0074D668 /* SF-Pro-Text-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Black.otf"; sourceTree = "<group>"; };
+		CC6CB3BE2CEF35AA0074D668 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		CC6CB3C52CEF39900074D668 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		CC6CB3C72CEF39990074D668 /* OnboardingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRouter.swift; sourceTree = "<group>"; };
+		CC6CB3C92CEF39A30074D668 /* OnboardingAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingAssembly.swift; sourceTree = "<group>"; };
+		CC6CB3CC2CEF44EB0074D668 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
+		CC6CB3CF2CEF47840074D668 /* AdvancedPageControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedPageControlView.swift; sourceTree = "<group>"; };
+		CC6CB3D12CEF478B0074D668 /* ColorUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
+		CC6CB3D32CEF47910074D668 /* Drawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC6CB35C2CEF31F10074D668 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC6CB38E2CEF335B0074D668 /* CasinoCollectionViewModel in Frameworks */,
+				CC6CB37F2CEF330A0074D668 /* SQLite in Frameworks */,
+				CC6CB37A2CEF32FA0074D668 /* SnapKit in Frameworks */,
+				CC6CB38C2CEF335B0074D668 /* CasinoCollectionModel in Frameworks */,
+				CC6CB3822CEF33130074D668 /* Swinject in Frameworks */,
+				CC6CB3872CEF331B0074D668 /* SwinjectAutoregistration in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC6CB3562CEF31F10074D668 = {
+			isa = PBXGroup;
+			children = (
+				CC6CB3772CEF32D40074D668 /* CasinoCollectionViewModel */,
+				CC6CB3762CEF32C50074D668 /* CasinoCollectionModel */,
+				CC6CB3612CEF31F10074D668 /* CasinoCollection */,
+				CC6CB3602CEF31F10074D668 /* Products */,
+				CC6CB38A2CEF335B0074D668 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CC6CB3602CEF31F10074D668 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC6CB35F2CEF31F10074D668 /* CasinoCollection.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC6CB3612CEF31F10074D668 /* CasinoCollection */ = {
+			isa = PBXGroup;
+			children = (
+				CC6CB3942CEF33A30074D668 /* Components */,
+				CC6CB3932CEF339D0074D668 /* Extensions */,
+				CC6CB3922CEF33960074D668 /* Appearance */,
+				CC6CB3912CEF33920074D668 /* View */,
+				CC6CB3902CEF338D0074D668 /* Common */,
+				CC6CB38F2CEF33860074D668 /* Base */,
+				CC6CB3622CEF31F10074D668 /* AppDelegate.swift */,
+				CC6CB3642CEF31F10074D668 /* SceneDelegate.swift */,
+				CC6CB3702CEF31F30074D668 /* Info.plist */,
+			);
+			path = CasinoCollection;
+			sourceTree = "<group>";
+		};
+		CC6CB38A2CEF335B0074D668 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC6CB38F2CEF33860074D668 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CC6CB3952CEF33B40074D668 /* Setupable.swift */,
+				CC6CB3972CEF33BC0074D668 /* BaseViewController.swift */,
+				CC6CB3992CEF33C20074D668 /* ReusableView.swift */,
+				CC6CB39B2CEF33C90074D668 /* BaseRouter.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CC6CB3902CEF338D0074D668 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CC6CB39D2CEF33CF0074D668 /* Assembly */,
+				CC6CB39E2CEF33E10074D668 /* ViewControllerFactory.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CC6CB3912CEF33920074D668 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC6CB3C42CEF39810074D668 /* Onboarding */,
+				CC6CB3A22CEF33EB0074D668 /* UntilOnboarding */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CC6CB3922CEF33960074D668 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				CC6CB36B2CEF31F30074D668 /* Assets.xcassets */,
+				CC6CB3A92CEF34470074D668 /* Fonts */,
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
+		CC6CB3932CEF339D0074D668 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CC6CB3AA2CEF34570074D668 /* TableView.swift */,
+				CC6CB3AC2CEF345D0074D668 /* CollectionView.swift */,
+				CC6CB3AE2CEF34640074D668 /* UIColor.swift */,
+				CC6CB3B02CEF34690074D668 /* UIDevice.swift */,
+				CC6CB3B22CEF346F0074D668 /* UILabel.swift */,
+				CC6CB3B42CEF34730074D668 /* StackView.swift */,
+				CC6CB3B62CEF34780074D668 /* String.swift */,
+				CC6CB3B82CEF347D0074D668 /* TabBar.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CC6CB3942CEF33A30074D668 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CC6CB3CE2CEF47770074D668 /* PageControl */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CC6CB39D2CEF33CF0074D668 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				CC6CB3A02CEF33E80074D668 /* ServiceAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		CC6CB3A22CEF33EB0074D668 /* UntilOnboarding */ = {
+			isa = PBXGroup;
+			children = (
+				CC6CB3A32CEF34220074D668 /* UntilOnboardingViewController.swift */,
+				CC6CB3A52CEF342B0074D668 /* UntilOnboardingRouter.swift */,
+				CC6CB3A72CEF34330074D668 /* UntilOnboardingAssembly.swift */,
+			);
+			path = UntilOnboarding;
+			sourceTree = "<group>";
+		};
+		CC6CB3A92CEF34470074D668 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CC6CB3BD2CEF35AA0074D668 /* SF-Pro-Text-Black.otf */,
+				CC6CB3BB2CEF35AA0074D668 /* SF-Pro-Text-Bold.otf */,
+				CC6CB3BE2CEF35AA0074D668 /* SF-Pro-Text-Medium.otf */,
+				CC6CB3BC2CEF35AA0074D668 /* SF-Pro-Text-Regular.otf */,
+				CC6CB3BA2CEF35AA0074D668 /* SF-Pro-Text-Semibold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CC6CB3C42CEF39810074D668 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				CC6CB3CB2CEF44E40074D668 /* Cell */,
+				CC6CB3C52CEF39900074D668 /* OnboardingViewController.swift */,
+				CC6CB3C72CEF39990074D668 /* OnboardingRouter.swift */,
+				CC6CB3C92CEF39A30074D668 /* OnboardingAssembly.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		CC6CB3CB2CEF44E40074D668 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CC6CB3CC2CEF44EB0074D668 /* OnboardingCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CC6CB3CE2CEF47770074D668 /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				CC6CB3CF2CEF47840074D668 /* AdvancedPageControlView.swift */,
+				CC6CB3D12CEF478B0074D668 /* ColorUtils.swift */,
+				CC6CB3D32CEF47910074D668 /* Drawer.swift */,
+			);
+			path = PageControl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC6CB35E2CEF31F10074D668 /* CasinoCollection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC6CB3732CEF31F30074D668 /* Build configuration list for PBXNativeTarget "CasinoCollection" */;
+			buildPhases = (
+				CC6CB35B2CEF31F10074D668 /* Sources */,
+				CC6CB35C2CEF31F10074D668 /* Frameworks */,
+				CC6CB35D2CEF31F10074D668 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CasinoCollection;
+			packageProductDependencies = (
+				CC6CB3792CEF32FA0074D668 /* SnapKit */,
+				CC6CB37E2CEF330A0074D668 /* SQLite */,
+				CC6CB3812CEF33130074D668 /* Swinject */,
+				CC6CB3862CEF331B0074D668 /* SwinjectAutoregistration */,
+				CC6CB38B2CEF335B0074D668 /* CasinoCollectionModel */,
+				CC6CB38D2CEF335B0074D668 /* CasinoCollectionViewModel */,
+			);
+			productName = CasinoCollection;
+			productReference = CC6CB35F2CEF31F10074D668 /* CasinoCollection.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC6CB3572CEF31F10074D668 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					CC6CB35E2CEF31F10074D668 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = CC6CB35A2CEF31F10074D668 /* Build configuration list for PBXProject "CasinoCollection" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC6CB3562CEF31F10074D668;
+			packageReferences = (
+				CC6CB3782CEF32FA0074D668 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				CC6CB37D2CEF330A0074D668 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+				CC6CB3802CEF33130074D668 /* XCRemoteSwiftPackageReference "Swinject" */,
+				CC6CB3852CEF331B0074D668 /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */,
+			);
+			productRefGroup = CC6CB3602CEF31F10074D668 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC6CB35E2CEF31F10074D668 /* CasinoCollection */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC6CB35D2CEF31F10074D668 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC6CB3BF2CEF35AA0074D668 /* SF-Pro-Text-Semibold.otf in Resources */,
+				CC6CB36C2CEF31F30074D668 /* Assets.xcassets in Resources */,
+				CC6CB3C32CEF35AA0074D668 /* SF-Pro-Text-Medium.otf in Resources */,
+				CC6CB3C12CEF35AA0074D668 /* SF-Pro-Text-Regular.otf in Resources */,
+				CC6CB3C02CEF35AA0074D668 /* SF-Pro-Text-Bold.otf in Resources */,
+				CC6CB3C22CEF35AA0074D668 /* SF-Pro-Text-Black.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC6CB35B2CEF31F10074D668 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC6CB3A62CEF342B0074D668 /* UntilOnboardingRouter.swift in Sources */,
+				CC6CB3AF2CEF34640074D668 /* UIColor.swift in Sources */,
+				CC6CB3B92CEF347D0074D668 /* TabBar.swift in Sources */,
+				CC6CB3AB2CEF34570074D668 /* TableView.swift in Sources */,
+				CC6CB3A82CEF34330074D668 /* UntilOnboardingAssembly.swift in Sources */,
+				CC6CB3632CEF31F10074D668 /* AppDelegate.swift in Sources */,
+				CC6CB3A12CEF33E80074D668 /* ServiceAssembly.swift in Sources */,
+				CC6CB3D02CEF47840074D668 /* AdvancedPageControlView.swift in Sources */,
+				CC6CB3C62CEF39900074D668 /* OnboardingViewController.swift in Sources */,
+				CC6CB3B32CEF346F0074D668 /* UILabel.swift in Sources */,
+				CC6CB3CD2CEF44EB0074D668 /* OnboardingCell.swift in Sources */,
+				CC6CB3D22CEF478B0074D668 /* ColorUtils.swift in Sources */,
+				CC6CB3AD2CEF345D0074D668 /* CollectionView.swift in Sources */,
+				CC6CB3CA2CEF39A30074D668 /* OnboardingAssembly.swift in Sources */,
+				CC6CB3C82CEF399A0074D668 /* OnboardingRouter.swift in Sources */,
+				CC6CB39F2CEF33E10074D668 /* ViewControllerFactory.swift in Sources */,
+				CC6CB39C2CEF33C90074D668 /* BaseRouter.swift in Sources */,
+				CC6CB39A2CEF33C20074D668 /* ReusableView.swift in Sources */,
+				CC6CB3B12CEF34690074D668 /* UIDevice.swift in Sources */,
+				CC6CB3B72CEF34780074D668 /* String.swift in Sources */,
+				CC6CB3982CEF33BC0074D668 /* BaseViewController.swift in Sources */,
+				CC6CB3B52CEF34730074D668 /* StackView.swift in Sources */,
+				CC6CB3D42CEF47910074D668 /* Drawer.swift in Sources */,
+				CC6CB3652CEF31F10074D668 /* SceneDelegate.swift in Sources */,
+				CC6CB3A42CEF34220074D668 /* UntilOnboardingViewController.swift in Sources */,
+				CC6CB3962CEF33B40074D668 /* Setupable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CC6CB3712CEF31F30074D668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC6CB3722CEF31F30074D668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC6CB3742CEF31F30074D668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CasinoCollection/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "bundle-id";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CC6CB3752CEF31F30074D668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CasinoCollection/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "bundle-id";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC6CB35A2CEF31F10074D668 /* Build configuration list for PBXProject "CasinoCollection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC6CB3712CEF31F30074D668 /* Debug */,
+				CC6CB3722CEF31F30074D668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC6CB3732CEF31F30074D668 /* Build configuration list for PBXNativeTarget "CasinoCollection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC6CB3742CEF31F30074D668 /* Debug */,
+				CC6CB3752CEF31F30074D668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CC6CB3782CEF32FA0074D668 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		CC6CB37D2CEF330A0074D668 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.3;
+			};
+		};
+		CC6CB3802CEF33130074D668 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.1;
+			};
+		};
+		CC6CB3852CEF331B0074D668 /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/SwinjectAutoregistration.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC6CB3792CEF32FA0074D668 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC6CB3782CEF32FA0074D668 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		CC6CB37E2CEF330A0074D668 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC6CB37D2CEF330A0074D668 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+		CC6CB3812CEF33130074D668 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC6CB3802CEF33130074D668 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		CC6CB3862CEF331B0074D668 /* SwinjectAutoregistration */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC6CB3852CEF331B0074D668 /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */;
+			productName = SwinjectAutoregistration;
+		};
+		CC6CB38B2CEF335B0074D668 /* CasinoCollectionModel */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CasinoCollectionModel;
+		};
+		CC6CB38D2CEF335B0074D668 /* CasinoCollectionViewModel */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CasinoCollectionViewModel;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CC6CB3572CEF31F10074D668 /* Project object */;
+}
