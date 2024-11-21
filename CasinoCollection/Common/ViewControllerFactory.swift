@@ -29,4 +29,12 @@ final class ViewControllerFactory {
         return viewController
     }
 
+    //MARK: Onboarding
+    static func makeHomeViewController() -> HomeViewController {
+        let assembler = Assembler(commonAssemblies + [HomeAssembly()])
+        let viewController = HomeViewController()
+        viewController.viewModel = assembler.resolver.resolve(IHomeViewModel.self)
+        return viewController
+    }
+
 }
