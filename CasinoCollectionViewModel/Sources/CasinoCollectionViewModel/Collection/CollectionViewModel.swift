@@ -1,15 +1,15 @@
 //
-//  HomeViewModel.swift
-//  
+//  CollectionViewModel.swift
 //
-//  Created by Er Baghdasaryan on 21.11.24.
+//
+//  Created by Er Baghdasaryan on 22.11.24.
 //
 
 import Foundation
 import CasinoCollectionModel
 import Combine
 
-public protocol IHomeViewModel {
+public protocol ICollectionViewModel {
     func loadData()
     var values: [String] { get set }
     var collections: [CollectionModel] { get set }
@@ -19,7 +19,7 @@ public protocol IHomeViewModel {
     var activateSuccessSubject: PassthroughSubject<Bool, Never> { get }
 }
 
-public class HomeViewModel: IHomeViewModel {
+public class CollectionViewModel: ICollectionViewModel {
 
     private let homeService: IHomeService
     public var values: [String] = []

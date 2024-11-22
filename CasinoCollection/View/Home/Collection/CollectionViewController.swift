@@ -1,32 +1,22 @@
 //
-//  HomeViewController.swift
+//  CollectionViewController.swift
 //  CasinoCollection
 //
-//  Created by Er Baghdasaryan on 21.11.24.
+//  Created by Er Baghdasaryan on 22.11.24.
 //
 
 import UIKit
 import CasinoCollectionViewModel
 import SnapKit
 
-class HomeViewController: BaseViewController {
+class CollectionViewController: BaseViewController {
 
     var viewModel: ViewModel?
     private let backGroundImage = UIImageView(image: .init(named: "bgImage"))
 
-    private let chipsCount = StatView(title: "chips in the collection")
-    private let costsCount = StatView(title: "the cost of the collection",
-                                      isMoney: true)
-    private var statStack: UIStackView!
-
-    private let diary = UIButton(type: .system)
-    private let settings = UIButton(type: .system)
-    private var buttonsStack: UIStackView!
-
-    private let collectionLabel = UILabel(text: "Collection",
-                                          textColor: .white,
-                                          font: UIFont(name: "SFProText-Bold", size: 28))
-    private let seeAll = UIButton(type: .system)
+    private let header = UILabel(text: "Collection",
+                                 textColor: .white,
+                                 font: UIFont(name: "SFProText-Bold", size: 34))
 
     var collectionView: UICollectionView!
     private var selectedIndexPath: IndexPath?
@@ -39,37 +29,10 @@ class HomeViewController: BaseViewController {
         setupTableView()
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.reloadInformation()
-    }
-
     override func setupUI() {
         super.setupUI()
 
-        self.statStack = UIStackView(arrangedSubviews: [chipsCount, costsCount],
-                                     axis: .horizontal,
-                                     spacing: 4)
-        self.statStack.distribution = .fillProportionally
-
-        self.diary.layer.masksToBounds = true
-        self.diary.layer.cornerRadius = 12
-        self.diary.backgroundColor = UIColor(hex: "#582862")
-        self.diary.setImage(.init(named: "diaryButton"), for: .normal)
-
-        self.settings.layer.masksToBounds = true
-        self.settings.layer.cornerRadius = 12
-        self.settings.backgroundColor = UIColor(hex: "#582862")
-        self.settings.setImage(.init(named: "settingsButton"), for: .normal)
-
-        self.buttonsStack = UIStackView(arrangedSubviews: [diary, settings],
-                                        axis: .horizontal,
-                                        spacing: 4)
-
-        self.seeAll.setTitle("See All", for: .normal)
-        self.seeAll.setTitleColor(UIColor(hex: "#920A98"), for: .normal)
-
-        self.collectionLabel.textAlignment = .left
+        self.header.textAlignment = .left
 
         let myLayout = UICollectionViewFlowLayout()
         myLayout.scrollDirection = .horizontal
@@ -92,13 +55,11 @@ class HomeViewController: BaseViewController {
         self.tableView.allowsSelection = true
 
         self.view.addSubview(backGroundImage)
-        self.view.addSubview(statStack)
-        self.view.addSubview(buttonsStack)
-        self.view.addSubview(collectionLabel)
-        self.view.addSubview(seeAll)
+        self.view.addSubview(header)
         self.view.addSubview(collectionView)
         self.view.addSubview(tableView)
         setupConstraints()
+        setupNavigationItems()
     }
 
     private func setupConstraints() {
@@ -109,36 +70,15 @@ class HomeViewController: BaseViewController {
             view.bottom.equalToSuperview()
         }
 
-        statStack.snp.makeConstraints { view in
-            view.top.equalToSuperview().offset(66)
-            view.leading.equalToSuperview().offset(16)
-            view.trailing.equalToSuperview().inset(16)
-            view.height.equalTo(110)
-        }
-
-        buttonsStack.snp.makeConstraints { view in
-            view.top.equalTo(statStack.snp.bottom).offset(8)
-            view.leading.equalToSuperview().offset(16)
-            view.trailing.equalToSuperview().inset(16)
-            view.height.equalTo(48)
-        }
-
-        collectionLabel.snp.makeConstraints { view in
-            view.top.equalTo(buttonsStack.snp.bottom).offset(8)
+        header.snp.makeConstraints { view in
+            view.top.equalToSuperview().offset(101)
             view.leading.equalToSuperview().offset(16)
             view.trailing.equalToSuperview().inset(60)
-            view.height.equalTo(34)
-        }
-
-        seeAll.snp.makeConstraints { view in
-            view.centerY.equalTo(collectionLabel.snp.centerY)
-            view.trailing.equalToSuperview().inset(16)
-            view.height.equalTo(20)
-            view.width.equalTo(50)
+            view.height.equalTo(41)
         }
 
         collectionView.snp.makeConstraints { view in
-            view.top.equalTo(collectionLabel.snp.bottom).offset(8)
+            view.top.equalTo(header.snp.bottom).offset(8)
             view.leading.equalToSuperview().offset(16)
             view.trailing.equalToSuperview()
             view.height.equalTo(44)
@@ -154,14 +94,16 @@ class HomeViewController: BaseViewController {
 
     override func setupViewModel() {
         super.setupViewModel()
-        reloadInformation()
         self.viewModel?.loadData()
         self.collectionView.reloadData()
+        self.viewModel?.loadCollections()
+        self.tableView.reloadData()
         setupDefaultSelection()
 
         viewModel?.activateSuccessSubject.sink { [weak self] _ in
             guard let self = self else { return }
-            self.reloadInformation()
+            self.viewModel?.loadCollections()
+            self.tableView.reloadData()
         }.store(in: &cancellables)
     }
 
@@ -176,38 +118,42 @@ class HomeViewController: BaseViewController {
 }
 
 //MARK: Make buttons actions
-extension HomeViewController {
+extension CollectionViewController {
     
     private func makeButtonsAction() {
-        seeAll.addTarget(self, action: #selector(seeAllCollections), for: .touchUpInside)
-        settings.addTarget(self, action: #selector(settingsTapped), for: .touchUpInside)
+    
     }
 
-    private func reloadInformation() {
-        guard let model = self.viewModel?.collections else { return }
-        self.viewModel?.loadCollections()
-        self.tableView.reloadData()
-        self.chipsCount.setup(with: "\(model.count)")
-        let totalPrice: Double = model.reduce(0) { sum, model in
-            if let priceValue = Double(model.price) {
-                return sum + priceValue
-            } else {
-                return sum
-            }
-        }
-        self.costsCount.setup(with: "\(Int(totalPrice))")
+    private func setupNavigationItems() {
+        let customBackButton = UIBarButtonItem(image: UIImage(named: "customBack"),
+                                               style: .plain,
+                                               target: self,
+                                               action: #selector(didTapCustomBackButton))
+        navigationItem.leftBarButtonItem = customBackButton
+
+        let addButton = UIButton(type: .system)
+        addButton.setTitle("Add", for: .normal)
+        addButton.setTitleColor(.white, for: .normal)
+        addButton.backgroundColor = UIColor.white.withAlphaComponent(0.05)
+        addButton.layer.cornerRadius = 17
+        addButton.layer.masksToBounds = true
+        addButton.frame = CGRect(x: 0, y: 0, width: 58, height: 34)
+        addButton.addTarget(self, action: #selector(didTapNewItemButton), for: .touchUpInside)
+        let barButton = UIBarButtonItem(customView: addButton)
+        navigationItem.rightBarButtonItem = barButton
     }
 
-    @objc func settingsTapped() {
+    @objc private func didTapCustomBackButton() {
         guard let navigationController = self.navigationController else { return }
-
-        HomeRouter.showSettingsViewController(in: navigationController)
+        HomeRouter.popViewController(in: navigationController)
     }
 
-    @objc func seeAllCollections() {
+    @objc private func didTapNewItemButton() {
         guard let navigationController = self.navigationController else { return }
+        guard let subject = self.viewModel?.activateSuccessSubject else { return }
 
-        HomeRouter.showCollectionViewController(in: navigationController)
+        CollectionRouter.showAddCollectionViewController(in: navigationController,
+                                                         navigationModel: .init(activateSuccessSubject: subject))
     }
 
     private func setupDefaultSelection() {
@@ -227,23 +173,23 @@ extension HomeViewController {
 
         let model = self.viewModel?.collections[index]
 
-        HomeRouter.showEditCollectionViewController(in: navigationController, navigationModel: .init(activateSuccessSubject: subject, model: model!))
+        CollectionRouter.showEditCollectionViewController(in: navigationController, navigationModel: .init(activateSuccessSubject: subject, model: model!))
     }
 
     private func addCollection() {
         guard let navigationController = self.navigationController else { return }
         guard let subject = self.viewModel?.activateSuccessSubject else { return }
 
-        HomeRouter.showAddCollectionViewController(in: navigationController,
+        CollectionRouter.showAddCollectionViewController(in: navigationController,
                                                          navigationModel: .init(activateSuccessSubject: subject))
     }
 }
 
-extension HomeViewController: IViewModelableController {
-    typealias ViewModel = IHomeViewModel
+extension CollectionViewController: IViewModelableController {
+    typealias ViewModel = ICollectionViewModel
 }
 
-extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+extension CollectionViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         let count = self.viewModel?.values.count ?? 0
         return count == 0 ? 1 : count
@@ -284,7 +230,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
 }
 
 //MARK: TableView Delegate & Data source
-extension HomeViewController:  UITableViewDelegate, UITableViewDataSource {
+extension CollectionViewController:  UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let count = viewModel?.filteredCollections.count ?? 0
@@ -319,7 +265,7 @@ extension HomeViewController:  UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.editCollection(for: indexPath.row)
+        editCollection(for: indexPath.row)
     }
 }
 
@@ -327,20 +273,20 @@ extension HomeViewController:  UITableViewDelegate, UITableViewDataSource {
 //MARK: Preview
 import SwiftUI
 
-struct HomeViewControllerProvider: PreviewProvider {
+struct CollectionViewControllerProvider: PreviewProvider {
 
     static var previews: some View {
         ContainerView().edgesIgnoringSafeArea(.all)
     }
 
     struct ContainerView: UIViewControllerRepresentable {
-        let homeViewController = HomeViewController()
+        let collectionViewController = CollectionViewController()
         
-        func makeUIViewController(context: UIViewControllerRepresentableContext<HomeViewControllerProvider.ContainerView>) -> HomeViewController {
-            return homeViewController
+        func makeUIViewController(context: UIViewControllerRepresentableContext<CollectionViewControllerProvider.ContainerView>) -> CollectionViewController {
+            return collectionViewController
         }
 
-        func updateUIViewController(_ uiViewController: HomeViewControllerProvider.ContainerView.UIViewControllerType, context: UIViewControllerRepresentableContext<HomeViewControllerProvider.ContainerView>) {
+        func updateUIViewController(_ uiViewController: CollectionViewControllerProvider.ContainerView.UIViewControllerType, context: UIViewControllerRepresentableContext<CollectionViewControllerProvider.ContainerView>) {
         }
     }
 }

@@ -42,6 +42,9 @@ final class AddCollectionTableViewCell: UITableViewCell, IReusableView {
         self.nominalValue.layer.cornerRadius = 10
         self.nominalValue.backgroundColor = UIColor(hex: "#920A98")
 
+        self.image.layer.masksToBounds = true
+        self.image.layer.cornerRadius = 20
+
         addSubview(content)
         content.addSubview(image)
         content.addSubview(nominalValue)
