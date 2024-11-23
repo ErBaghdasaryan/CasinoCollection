@@ -181,6 +181,13 @@ extension HomeViewController {
     private func makeButtonsAction() {
         seeAll.addTarget(self, action: #selector(seeAllCollections), for: .touchUpInside)
         settings.addTarget(self, action: #selector(settingsTapped), for: .touchUpInside)
+        diary.addTarget(self, action: #selector(openDairy), for: .touchUpInside)
+    }
+
+    @objc func openDairy() {
+        guard let navigationController = self.navigationController else { return }
+
+        HomeRouter.showDiaryViewController(in: navigationController)
     }
 
     private func reloadInformation() {

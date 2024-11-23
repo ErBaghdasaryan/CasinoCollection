@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC5BC8542CF1E55C00845293 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BC8532CF1E55C00845293 /* DiaryViewController.swift */; };
+		CC5BC8562CF1E56200845293 /* DiaryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BC8552CF1E56200845293 /* DiaryAssembly.swift */; };
+		CC5BC8582CF1E56A00845293 /* DiaryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BC8572CF1E56A00845293 /* DiaryRouter.swift */; };
+		CC5BC85B2CF1E9F600845293 /* EmptyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BC85A2CF1E9F600845293 /* EmptyCollectionViewCell.swift */; };
+		CC5BC85D2CF1EA4100845293 /* NoteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BC85C2CF1EA4100845293 /* NoteCollectionViewCell.swift */; };
+		CC5BC8602CF1EE5500845293 /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BC85F2CF1EE5500845293 /* AddNoteViewController.swift */; };
+		CC5BC8622CF1EE5C00845293 /* AddNoteAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BC8612CF1EE5C00845293 /* AddNoteAssembly.swift */; };
+		CC5BC8652CF1EEC900845293 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BC8642CF1EEC900845293 /* NoteViewController.swift */; };
+		CC5BC8672CF1EED100845293 /* NoteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BC8662CF1EED100845293 /* NoteRouter.swift */; };
+		CC5BC8692CF1EED700845293 /* NoteAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BC8682CF1EED700845293 /* NoteAssembly.swift */; };
+		CC5BC86C2CF1F1D400845293 /* HeaderField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BC86B2CF1F1D400845293 /* HeaderField.swift */; };
+		CC5BC86F2CF1FA1800845293 /* EditNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BC86E2CF1FA1800845293 /* EditNoteViewController.swift */; };
+		CC5BC8712CF1FA2100845293 /* EditNoteAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BC8702CF1FA2100845293 /* EditNoteAssembly.swift */; };
+		CC5BC8742CF1FD8200845293 /* SaleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BC8732CF1FD8200845293 /* SaleTableViewCell.swift */; };
+		CC5BC8762CF1FF7100845293 /* AddSaleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BC8752CF1FF7100845293 /* AddSaleTableViewCell.swift */; };
+		CC5BC8782CF2047300845293 /* AddSaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BC8772CF2047300845293 /* AddSaleViewController.swift */; };
+		CC5BC87A2CF2047A00845293 /* AddSaleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BC8792CF2047A00845293 /* AddSaleAssembly.swift */; };
+		CC5BC87C2CF2084900845293 /* EmptySaleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BC87B2CF2084900845293 /* EmptySaleTableViewCell.swift */; };
 		CC6CB3632CEF31F10074D668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB3622CEF31F10074D668 /* AppDelegate.swift */; };
 		CC6CB3652CEF31F10074D668 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB3642CEF31F10074D668 /* SceneDelegate.swift */; };
 		CC6CB36C2CEF31F30074D668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC6CB36B2CEF31F30074D668 /* Assets.xcassets */; };
@@ -71,6 +89,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC5BC8532CF1E55C00845293 /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
+		CC5BC8552CF1E56200845293 /* DiaryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryAssembly.swift; sourceTree = "<group>"; };
+		CC5BC8572CF1E56A00845293 /* DiaryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryRouter.swift; sourceTree = "<group>"; };
+		CC5BC85A2CF1E9F600845293 /* EmptyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCollectionViewCell.swift; sourceTree = "<group>"; };
+		CC5BC85C2CF1EA4100845293 /* NoteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCollectionViewCell.swift; sourceTree = "<group>"; };
+		CC5BC85F2CF1EE5500845293 /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
+		CC5BC8612CF1EE5C00845293 /* AddNoteAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteAssembly.swift; sourceTree = "<group>"; };
+		CC5BC8642CF1EEC900845293 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		CC5BC8662CF1EED100845293 /* NoteRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRouter.swift; sourceTree = "<group>"; };
+		CC5BC8682CF1EED700845293 /* NoteAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteAssembly.swift; sourceTree = "<group>"; };
+		CC5BC86B2CF1F1D400845293 /* HeaderField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderField.swift; sourceTree = "<group>"; };
+		CC5BC86E2CF1FA1800845293 /* EditNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNoteViewController.swift; sourceTree = "<group>"; };
+		CC5BC8702CF1FA2100845293 /* EditNoteAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNoteAssembly.swift; sourceTree = "<group>"; };
+		CC5BC8732CF1FD8200845293 /* SaleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaleTableViewCell.swift; sourceTree = "<group>"; };
+		CC5BC8752CF1FF7100845293 /* AddSaleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSaleTableViewCell.swift; sourceTree = "<group>"; };
+		CC5BC8772CF2047300845293 /* AddSaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSaleViewController.swift; sourceTree = "<group>"; };
+		CC5BC8792CF2047A00845293 /* AddSaleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSaleAssembly.swift; sourceTree = "<group>"; };
+		CC5BC87B2CF2084900845293 /* EmptySaleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySaleTableViewCell.swift; sourceTree = "<group>"; };
 		CC6CB35F2CEF31F10074D668 /* CasinoCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CasinoCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC6CB3622CEF31F10074D668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC6CB3642CEF31F10074D668 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +185,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC5BC8522CF1E54F00845293 /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				CC5BC8722CF1FCC500845293 /* AddSale */,
+				CC5BC86D2CF1FA0700845293 /* EditNote */,
+				CC5BC8632CF1EEBF00845293 /* Note */,
+				CC5BC85E2CF1EE4B00845293 /* AddNote */,
+				CC5BC8592CF1E9EC00845293 /* Cell */,
+				CC5BC8532CF1E55C00845293 /* DiaryViewController.swift */,
+				CC5BC8552CF1E56200845293 /* DiaryAssembly.swift */,
+				CC5BC8572CF1E56A00845293 /* DiaryRouter.swift */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
+		CC5BC8592CF1E9EC00845293 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CC5BC85A2CF1E9F600845293 /* EmptyCollectionViewCell.swift */,
+				CC5BC85C2CF1EA4100845293 /* NoteCollectionViewCell.swift */,
+				CC5BC8732CF1FD8200845293 /* SaleTableViewCell.swift */,
+				CC5BC8752CF1FF7100845293 /* AddSaleTableViewCell.swift */,
+				CC5BC87B2CF2084900845293 /* EmptySaleTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CC5BC85E2CF1EE4B00845293 /* AddNote */ = {
+			isa = PBXGroup;
+			children = (
+				CC5BC85F2CF1EE5500845293 /* AddNoteViewController.swift */,
+				CC5BC8612CF1EE5C00845293 /* AddNoteAssembly.swift */,
+			);
+			path = AddNote;
+			sourceTree = "<group>";
+		};
+		CC5BC8632CF1EEBF00845293 /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				CC5BC8642CF1EEC900845293 /* NoteViewController.swift */,
+				CC5BC8662CF1EED100845293 /* NoteRouter.swift */,
+				CC5BC8682CF1EED700845293 /* NoteAssembly.swift */,
+			);
+			path = Note;
+			sourceTree = "<group>";
+		};
+		CC5BC86A2CF1F1C900845293 /* HeaderField */ = {
+			isa = PBXGroup;
+			children = (
+				CC5BC86B2CF1F1D400845293 /* HeaderField.swift */,
+			);
+			path = HeaderField;
+			sourceTree = "<group>";
+		};
+		CC5BC86D2CF1FA0700845293 /* EditNote */ = {
+			isa = PBXGroup;
+			children = (
+				CC5BC86E2CF1FA1800845293 /* EditNoteViewController.swift */,
+				CC5BC8702CF1FA2100845293 /* EditNoteAssembly.swift */,
+			);
+			path = EditNote;
+			sourceTree = "<group>";
+		};
+		CC5BC8722CF1FCC500845293 /* AddSale */ = {
+			isa = PBXGroup;
+			children = (
+				CC5BC8772CF2047300845293 /* AddSaleViewController.swift */,
+				CC5BC8792CF2047A00845293 /* AddSaleAssembly.swift */,
+			);
+			path = AddSale;
+			sourceTree = "<group>";
+		};
 		CC6CB3562CEF31F10074D668 = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +322,7 @@
 		CC6CB3912CEF33920074D668 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CC5BC8522CF1E54F00845293 /* Diary */,
 				CC6CB4022CF0D7DF0074D668 /* Settings */,
 				CC6CB3D82CEF8C840074D668 /* Home */,
 				CC6CB3C42CEF39810074D668 /* Onboarding */,
@@ -378,6 +487,7 @@
 		CC6CB3F72CF0B8620074D668 /* TextFields */ = {
 			isa = PBXGroup;
 			children = (
+				CC5BC86A2CF1F1C900845293 /* HeaderField */,
 				CC6CB3FB2CF0B8800074D668 /* SystemView */,
 				CC6CB3FA2CF0B8750074D668 /* SystemField */,
 			);
@@ -524,29 +634,44 @@
 				CC6CB3AB2CEF34570074D668 /* TableView.swift in Sources */,
 				CC6CB40E2CF0EC0E0074D668 /* EditCollectionViewController.swift in Sources */,
 				CC6CB3A82CEF34330074D668 /* UntilOnboardingAssembly.swift in Sources */,
+				CC5BC8762CF1FF7100845293 /* AddSaleTableViewCell.swift in Sources */,
+				CC5BC8582CF1E56A00845293 /* DiaryRouter.swift in Sources */,
+				CC5BC8542CF1E55C00845293 /* DiaryViewController.swift in Sources */,
 				CC6CB3E32CEFD0760074D668 /* EmptyTableViewCell.swift in Sources */,
 				CC6CB3632CEF31F10074D668 /* AppDelegate.swift in Sources */,
 				CC6CB4042CF0D7EA0074D668 /* SettingsViewController.swift in Sources */,
 				CC6CB3A12CEF33E80074D668 /* ServiceAssembly.swift in Sources */,
+				CC5BC8672CF1EED100845293 /* NoteRouter.swift in Sources */,
 				CC6CB4062CF0D7F20074D668 /* SettingsAssembly.swift in Sources */,
+				CC5BC85B2CF1E9F600845293 /* EmptyCollectionViewCell.swift in Sources */,
 				CC6CB3D02CEF47840074D668 /* AdvancedPageControlView.swift in Sources */,
 				CC6CB4102CF0EC160074D668 /* EditCollectionAssembly.swift in Sources */,
+				CC5BC8712CF1FA2100845293 /* EditNoteAssembly.swift in Sources */,
+				CC5BC8652CF1EEC900845293 /* NoteViewController.swift in Sources */,
 				CC6CB3C62CEF39900074D668 /* OnboardingViewController.swift in Sources */,
 				CC6CB3B32CEF346F0074D668 /* UILabel.swift in Sources */,
+				CC5BC87A2CF2047A00845293 /* AddSaleAssembly.swift in Sources */,
+				CC5BC85D2CF1EA4100845293 /* NoteCollectionViewCell.swift in Sources */,
 				CC6CB3DC2CEF8C930074D668 /* HomeAssembly.swift in Sources */,
+				CC5BC8782CF2047300845293 /* AddSaleViewController.swift in Sources */,
 				CC6CB3CD2CEF44EB0074D668 /* OnboardingCell.swift in Sources */,
+				CC5BC87C2CF2084900845293 /* EmptySaleTableViewCell.swift in Sources */,
 				CC6CB3D22CEF478B0074D668 /* ColorUtils.swift in Sources */,
 				CC6CB3AD2CEF345D0074D668 /* CollectionView.swift in Sources */,
 				CC6CB3FF2CF0B8A00074D668 /* CustomTextField.swift in Sources */,
 				CC6CB3CA2CEF39A30074D668 /* OnboardingAssembly.swift in Sources */,
 				CC6CB3C82CEF399A0074D668 /* OnboardingRouter.swift in Sources */,
+				CC5BC8742CF1FD8200845293 /* SaleTableViewCell.swift in Sources */,
+				CC5BC8562CF1E56200845293 /* DiaryAssembly.swift in Sources */,
 				CC6CB39F2CEF33E10074D668 /* ViewControllerFactory.swift in Sources */,
 				CC6CB3E52CEFD2140074D668 /* AddCollectionTableViewCell.swift in Sources */,
 				CC6CB3EF2CF0A7E40074D668 /* AddCollectionViewController.swift in Sources */,
 				CC6CB3F92CF0B8700074D668 /* SystemTextField.swift in Sources */,
 				CC6CB3D72CEF8B690074D668 /* StatisticView.swift in Sources */,
 				CC6CB4082CF0D7FA0074D668 /* SettingsRouter.swift in Sources */,
+				CC5BC8602CF1EE5500845293 /* AddNoteViewController.swift in Sources */,
 				CC6CB3E12CEFCBB90074D668 /* ValueCollectionViewCell.swift in Sources */,
+				CC5BC86C2CF1F1D400845293 /* HeaderField.swift in Sources */,
 				CC6CB39C2CEF33C90074D668 /* BaseRouter.swift in Sources */,
 				CC6CB3F12CF0A82A0074D668 /* AddColelctionAssembly.swift in Sources */,
 				CC6CB3EC2CF07D690074D668 /* CollectionRouter.swift in Sources */,
@@ -559,6 +684,7 @@
 				CC6CB3B72CEF34780074D668 /* String.swift in Sources */,
 				CC6CB3982CEF33BC0074D668 /* BaseViewController.swift in Sources */,
 				CC6CB3B52CEF34730074D668 /* StackView.swift in Sources */,
+				CC5BC8622CF1EE5C00845293 /* AddNoteAssembly.swift in Sources */,
 				CC6CB40B2CF0DDC40074D668 /* UsageViewController.swift in Sources */,
 				CC6CB3D42CEF47910074D668 /* Drawer.swift in Sources */,
 				CC6CB4012CF0B8B60074D668 /* CustomTextView.swift in Sources */,
@@ -567,6 +693,8 @@
 				CC6CB3A42CEF34220074D668 /* UntilOnboardingViewController.swift in Sources */,
 				CC6CB3962CEF33B40074D668 /* Setupable.swift in Sources */,
 				CC6CB3EA2CF07D630074D668 /* CollectionAssembly.swift in Sources */,
+				CC5BC8692CF1EED700845293 /* NoteAssembly.swift in Sources */,
+				CC5BC86F2CF1FA1800845293 /* EditNoteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,6 +830,7 @@
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CasinoCollection/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Casino Collection";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -712,7 +841,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "bundle-id";
+				PRODUCT_BUNDLE_IDENTIFIER = com.isk.c4s1n0c0ll;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -734,6 +863,7 @@
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CasinoCollection/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Casino Collection";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -744,7 +874,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "bundle-id";
+				PRODUCT_BUNDLE_IDENTIFIER = com.isk.c4s1n0c0ll;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

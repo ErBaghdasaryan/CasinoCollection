@@ -74,4 +74,44 @@ final class ViewControllerFactory {
         return viewController
     }
 
+    //MARK: Diary
+    static func makeDiaryViewController() -> DiaryViewController {
+        let assembler = Assembler(commonAssemblies + [DiaryAssembly()])
+        let viewController = DiaryViewController()
+        viewController.viewModel = assembler.resolver.resolve(IDiaryViewModel.self)
+        return viewController
+    }
+
+    //MARK: Note
+    static func makeNotesViewController() -> NoteViewController {
+        let assembler = Assembler(commonAssemblies + [NoteAssembly()])
+        let viewController = NoteViewController()
+        viewController.viewModel = assembler.resolver.resolve(INoteViewModel.self)
+        return viewController
+    }
+
+    //MARK: AddNote
+    static func makeAddNoteViewController(navigationModel: AddNavigationModel) -> AddNoteViewController {
+        let assembler = Assembler(commonAssemblies + [AddNoteAssembly()])
+        let viewController = AddNoteViewController()
+        viewController.viewModel = assembler.resolver.resolve(IAddNoteViewModel.self, argument: navigationModel)
+        return viewController
+    }
+
+    //MARK: EditNote
+    static func makeEditNoteViewController(navigationModel: NoteNavigationModel) -> EditNoteViewController {
+        let assembler = Assembler(commonAssemblies + [EditNoteAssembly()])
+        let viewController = EditNoteViewController()
+        viewController.viewModel = assembler.resolver.resolve(IEditNoteViewModel.self, argument: navigationModel)
+        return viewController
+    }
+
+    //MARK: AddSale
+    static func makeAddSaleViewController(navigationModel: AddNavigationModel) -> AddSaleViewController {
+        let assembler = Assembler(commonAssemblies + [AddSaleAssembly()])
+        let viewController = AddSaleViewController()
+        viewController.viewModel = assembler.resolver.resolve(IAddSaleViewModel.self, argument: navigationModel)
+        return viewController
+    }
+
 }

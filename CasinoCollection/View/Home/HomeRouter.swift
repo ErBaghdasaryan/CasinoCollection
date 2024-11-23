@@ -38,4 +38,11 @@ final class HomeRouter: BaseRouter {
         navigationController.modalPresentationStyle = .pageSheet
         navigationController.present(viewController, animated: true)
     }
+
+    static func showDiaryViewController(in navigationController: UINavigationController) {
+        let viewController = ViewControllerFactory.makeDiaryViewController()
+        viewController.navigationItem.hidesBackButton = false
+        navigationController.navigationBar.isHidden = false
+        navigationController.pushViewController(viewController, animated: true)
+    }
 }
