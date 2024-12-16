@@ -25,6 +25,15 @@
 		CC5BC8782CF2047300845293 /* AddSaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BC8772CF2047300845293 /* AddSaleViewController.swift */; };
 		CC5BC87A2CF2047A00845293 /* AddSaleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BC8792CF2047A00845293 /* AddSaleAssembly.swift */; };
 		CC5BC87C2CF2084900845293 /* EmptySaleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5BC87B2CF2084900845293 /* EmptySaleTableViewCell.swift */; };
+		CC69223C2D10411D00CB37BC /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC69223B2D10411D00CB37BC /* MainCell.swift */; };
+		CC69223E2D10412700CB37BC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC69223D2D10412700CB37BC /* MainViewController.swift */; };
+		CC6922402D10412D00CB37BC /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC69223F2D10412D00CB37BC /* MainRouter.swift */; };
+		CC6922422D10413500CB37BC /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6922412D10413500CB37BC /* MainAssembly.swift */; };
+		CC6922462D1044F400CB37BC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6922452D1044F400CB37BC /* DetailViewController.swift */; };
+		CC6922482D1044FB00CB37BC /* DetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6922472D1044FB00CB37BC /* DetailAssembly.swift */; };
+		CC69224A2D10450300CB37BC /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6922492D10450300CB37BC /* DetailRouter.swift */; };
+		CC69224C2D10475D00CB37BC /* FeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC69224B2D10475D00CB37BC /* FeatureViewController.swift */; };
+		CC69224E2D10476600CB37BC /* FeatureAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC69224D2D10476600CB37BC /* FeatureAssembly.swift */; };
 		CC6CB3632CEF31F10074D668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB3622CEF31F10074D668 /* AppDelegate.swift */; };
 		CC6CB3652CEF31F10074D668 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6CB3642CEF31F10074D668 /* SceneDelegate.swift */; };
 		CC6CB36C2CEF31F30074D668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC6CB36B2CEF31F30074D668 /* Assets.xcassets */; };
@@ -107,6 +116,15 @@
 		CC5BC8772CF2047300845293 /* AddSaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSaleViewController.swift; sourceTree = "<group>"; };
 		CC5BC8792CF2047A00845293 /* AddSaleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSaleAssembly.swift; sourceTree = "<group>"; };
 		CC5BC87B2CF2084900845293 /* EmptySaleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySaleTableViewCell.swift; sourceTree = "<group>"; };
+		CC69223B2D10411D00CB37BC /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		CC69223D2D10412700CB37BC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CC69223F2D10412D00CB37BC /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		CC6922412D10413500CB37BC /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
+		CC6922452D1044F400CB37BC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CC6922472D1044FB00CB37BC /* DetailAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAssembly.swift; sourceTree = "<group>"; };
+		CC6922492D10450300CB37BC /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		CC69224B2D10475D00CB37BC /* FeatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureViewController.swift; sourceTree = "<group>"; };
+		CC69224D2D10476600CB37BC /* FeatureAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureAssembly.swift; sourceTree = "<group>"; };
 		CC6CB35F2CEF31F10074D668 /* CasinoCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CasinoCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC6CB3622CEF31F10074D668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC6CB3642CEF31F10074D668 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -257,6 +275,44 @@
 			path = AddSale;
 			sourceTree = "<group>";
 		};
+		CC6922392D10410B00CB37BC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CC69223A2D10411500CB37BC /* Cell */,
+				CC69223D2D10412700CB37BC /* MainViewController.swift */,
+				CC69223F2D10412D00CB37BC /* MainRouter.swift */,
+				CC6922412D10413500CB37BC /* MainAssembly.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CC69223A2D10411500CB37BC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CC69223B2D10411D00CB37BC /* MainCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CC6922432D1044E500CB37BC /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				CC6922452D1044F400CB37BC /* DetailViewController.swift */,
+				CC6922472D1044FB00CB37BC /* DetailAssembly.swift */,
+				CC6922492D10450300CB37BC /* DetailRouter.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		CC6922442D1044EA00CB37BC /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				CC69224B2D10475D00CB37BC /* FeatureViewController.swift */,
+				CC69224D2D10476600CB37BC /* FeatureAssembly.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
 		CC6CB3562CEF31F10074D668 = {
 			isa = PBXGroup;
 			children = (
@@ -322,6 +378,9 @@
 		CC6CB3912CEF33920074D668 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CC6922442D1044EA00CB37BC /* Feature */,
+				CC6922432D1044E500CB37BC /* Detail */,
+				CC6922392D10410B00CB37BC /* Main */,
 				CC5BC8522CF1E54F00845293 /* Diary */,
 				CC6CB4022CF0D7DF0074D668 /* Settings */,
 				CC6CB3D82CEF8C840074D668 /* Home */,
@@ -630,8 +689,10 @@
 			files = (
 				CC6CB3A62CEF342B0074D668 /* UntilOnboardingRouter.swift in Sources */,
 				CC6CB3AF2CEF34640074D668 /* UIColor.swift in Sources */,
+				CC69223C2D10411D00CB37BC /* MainCell.swift in Sources */,
 				CC6CB3B92CEF347D0074D668 /* TabBar.swift in Sources */,
 				CC6CB3AB2CEF34570074D668 /* TableView.swift in Sources */,
+				CC69224A2D10450300CB37BC /* DetailRouter.swift in Sources */,
 				CC6CB40E2CF0EC0E0074D668 /* EditCollectionViewController.swift in Sources */,
 				CC6CB3A82CEF34330074D668 /* UntilOnboardingAssembly.swift in Sources */,
 				CC5BC8762CF1FF7100845293 /* AddSaleTableViewCell.swift in Sources */,
@@ -642,6 +703,7 @@
 				CC6CB4042CF0D7EA0074D668 /* SettingsViewController.swift in Sources */,
 				CC6CB3A12CEF33E80074D668 /* ServiceAssembly.swift in Sources */,
 				CC5BC8672CF1EED100845293 /* NoteRouter.swift in Sources */,
+				CC6922402D10412D00CB37BC /* MainRouter.swift in Sources */,
 				CC6CB4062CF0D7F20074D668 /* SettingsAssembly.swift in Sources */,
 				CC5BC85B2CF1E9F600845293 /* EmptyCollectionViewCell.swift in Sources */,
 				CC6CB3D02CEF47840074D668 /* AdvancedPageControlView.swift in Sources */,
@@ -651,6 +713,7 @@
 				CC6CB3C62CEF39900074D668 /* OnboardingViewController.swift in Sources */,
 				CC6CB3B32CEF346F0074D668 /* UILabel.swift in Sources */,
 				CC5BC87A2CF2047A00845293 /* AddSaleAssembly.swift in Sources */,
+				CC69223E2D10412700CB37BC /* MainViewController.swift in Sources */,
 				CC5BC85D2CF1EA4100845293 /* NoteCollectionViewCell.swift in Sources */,
 				CC6CB3DC2CEF8C930074D668 /* HomeAssembly.swift in Sources */,
 				CC5BC8782CF2047300845293 /* AddSaleViewController.swift in Sources */,
@@ -686,13 +749,18 @@
 				CC6CB3B52CEF34730074D668 /* StackView.swift in Sources */,
 				CC5BC8622CF1EE5C00845293 /* AddNoteAssembly.swift in Sources */,
 				CC6CB40B2CF0DDC40074D668 /* UsageViewController.swift in Sources */,
+				CC69224C2D10475D00CB37BC /* FeatureViewController.swift in Sources */,
 				CC6CB3D42CEF47910074D668 /* Drawer.swift in Sources */,
+				CC69224E2D10476600CB37BC /* FeatureAssembly.swift in Sources */,
 				CC6CB4012CF0B8B60074D668 /* CustomTextView.swift in Sources */,
+				CC6922482D1044FB00CB37BC /* DetailAssembly.swift in Sources */,
+				CC6922462D1044F400CB37BC /* DetailViewController.swift in Sources */,
 				CC6CB3652CEF31F10074D668 /* SceneDelegate.swift in Sources */,
 				CC6CB3F62CF0AEF20074D668 /* AddPhoto.swift in Sources */,
 				CC6CB3A42CEF34220074D668 /* UntilOnboardingViewController.swift in Sources */,
 				CC6CB3962CEF33B40074D668 /* Setupable.swift in Sources */,
 				CC6CB3EA2CF07D630074D668 /* CollectionAssembly.swift in Sources */,
+				CC6922422D10413500CB37BC /* MainAssembly.swift in Sources */,
 				CC5BC8692CF1EED700845293 /* NoteAssembly.swift in Sources */,
 				CC5BC86F2CF1FA1800845293 /* EditNoteViewController.swift in Sources */,
 			);
@@ -840,7 +908,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.isk.c4s1n0c0ll;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -873,7 +941,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.isk.c4s1n0c0ll;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

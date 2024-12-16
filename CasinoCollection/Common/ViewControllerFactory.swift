@@ -114,4 +114,28 @@ final class ViewControllerFactory {
         return viewController
     }
 
+    //MARK: Main
+    static func makeMainViewController() -> MainViewController {
+        let assembler = Assembler(commonAssemblies + [MainAssembly()])
+        let viewController = MainViewController()
+        viewController.viewModel = assembler.resolver.resolve(IMainViewModel.self)
+        return viewController
+    }
+
+    //MARK: Detail
+    static func makeDetailViewController() -> DetailViewController {
+        let assembler = Assembler(commonAssemblies + [DetailAssembly()])
+        let viewController = DetailViewController()
+        viewController.viewModel = assembler.resolver.resolve(IDetailViewModel.self)
+        return viewController
+    }
+
+    //MARK: Feature
+    static func makeFeatureViewController() -> FeatureViewController {
+        let assembler = Assembler(commonAssemblies + [FeatureAssembly()])
+        let viewController = FeatureViewController()
+        viewController.viewModel = assembler.resolver.resolve(IFeatureViewModel.self)
+        return viewController
+    }
+
 }
